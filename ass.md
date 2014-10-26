@@ -72,9 +72,12 @@ Argument: if we swap all such inversions in $O$ we will have $S$ and thus $S$ is
 
 Exchange argument used when a solution is an ordering.
 
+Note:
+Swap only neighboring jobs.
+
 ## Stays ahead argument
 
-Have your solution $S$, according to greedy
+Show your algorithm "stays ahead" of any other solution. This is done using induction and an arbitrary optimal solution $O$.
 
 
 # Dynamic programming
@@ -123,3 +126,7 @@ Geometric sum: $\sum^{n-1}_{k=0}r^k = \frac{r^n-1}{r-1}$
 Sum sum: $\sum^n_{i=m} 1 = n + 1 - m$
 
 Summelisummm: $\sum^n_{i=m} i = \frac{(n+1-m)(n+m)}{2}$
+
+# Proofs
+
+Proof by contradiction can be useful.
