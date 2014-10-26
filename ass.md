@@ -66,9 +66,11 @@ Think about: what ordering would change the total running time of algorithm. If 
 
 ## Exchange argument
 
-Have your solution $S$, according to some greedy criterion, an arbitrary solution $O$. If $S\neq O$ then there must be inversion (show what inversion is). Show that you can swap the inversion in $O$ and not make $O$ a worse solution.
+Have your solution $S$, according to some greedy criterion, an arbitrary solution $O$. If $S \neq O$ then there must be inversion (show what inversion is). Show that you can swap the inversion in $O$ and not make $O$ a worse solution.
 
 Argument: if we swap all such inversions in $O$ we will have $S$ and thus $S$ is no worse than an arbitrary solution and is therefore optimal.
+
+Exchange argument used when a solution is an ordering.
 
 ## Stays ahead argument
 
@@ -78,11 +80,6 @@ Have your solution $S$, according to greedy
 # Dynamic programming
 
 Solve \textsc{Opt} backwards in recurrence. Iterate forwards in algorithm.
-
-
-# Divide and conquer
-
-## Useful
 
 
 # Network flow

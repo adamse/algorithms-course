@@ -1,4 +1,4 @@
-\documentclass[twocolumn,fleqn,a4paper,$if(lang)$$lang$$endif$]{article}
+\documentclass[fleqn,a4paper,$if(lang)$$lang$$endif$]{article}
 
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -6,6 +6,8 @@
 \usepackage{fixltx2e} % provides \textsubscript
 
 \usepackage{fullpage}
+
+\usepackage{multicol}
 
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -136,7 +138,9 @@ $if(toc)$
 \tableofcontents
 }
 $endif$
+\begin{multicols}{2}
 $body$
+\end{multicols}
 
 $for(include-after)$
 $include-after$
