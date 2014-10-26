@@ -3,43 +3,37 @@ title: Fusklapp Algorithms
 author: Adam Sandberg Eriksson (910717--3099, saadam@student)
 ...
 
+
 # Graphs
 
 If graph problem and there is some constraint on the graph, it might be easier to first remove offending edges/nodes.
 
-## Cut
-
-Partition of vertices into two disjoint subsets.
-
-### Cut-set
-
-Any cut defines a cut-set: all edges that cross the cut.
-
-### Min-cut
-
-A cut is min if size of cut is ≤ any other cut.
-
-### Max-cut
-
-A cut is max if size ≥ any other cut.
+\begin{description}
+\item[Cut]
+Partition of vertices into two disjoint subsets.\\
+\item[Cut-set]
+Any cut defines a cut-set: all edges that cross the cut. \\
+\item[Min-cut]
+A cut is min if size of cut is ≤ any other cut. \\
+\item[Max-cut]
+A cut is max if size ≥ any other cut. \\
+\item[Independent set] Set of vertices with no edges between them. \\
+\end{description}
 
 ## MST
 
-### Cycle property
-
-For any cycle $C$ in the graph, if the weight of an edge $e$ is larger than all other edges in $C$, then $e$ does not belong to a MST.
-
-### Cut property
-
+\begin{description}
+\item[Cycle property]
+For any cycle $C$ in the graph, if the weight of an edge $e$ is larger than all other edges in $C$, then $e$ does not belong to a MST. \\
+\item[Cut property]
 For any cut $C$, if the weight of edge $e$ in $C$ is strictly smaller than all
 other edges of $C$ then this edge belongs to all MSTs of the graph.
 
 For any cut $C$, of graph $G$, the edge $e$ included in MST of $G$ is strictly
-smaller than all other edges in $C$.
-
-### Minimum-cost edge
-
-If edge $e$ with minimum cost is unique it is included in all MST.
+smaller than all other edges in $C$. \\
+\item[Minimum-cost edge]
+If edge $e$ with minimum cost is unique it is included in all MST.\\
+\end{description}
 
 ## Kruskal's algorithm
 
@@ -79,6 +73,7 @@ Argument: if we swap all such inversions in $O$ we will have $S$ and thus $S$ is
 ## Stays ahead argument
 
 Have your solution $S$, according to greedy
+
 
 # Dynamic programming
 
