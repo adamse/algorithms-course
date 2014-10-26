@@ -111,7 +111,7 @@ Construct graph $G=(V, E)$. $V=\{s, t\} \cup P$, $P$ set of patients. For all $v
 
 To prove that a problem $Q$ is NP-complete you have to:
 
-1. Show that you can verify a solution to $Q$ in polynomial time.
+1. Show that you can verify a solution to $Q$ in polynomial time. (Shows that problem is in $NP$)
 2. Reduce some NP-complete problem $R$ to $Q$.
 3. Show that a solution to $R$ is a solution to $Q$ and vice versa.
 
